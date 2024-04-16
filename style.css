@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --font-family: "Platypi", serif;
+
+    --primary-color:#FAE466;
+    --bg-color-darkmode:#311F4B;
+    --bg-color-lightmode:#A366FA;
+}
+.lightmode{
+    background-color: var(--bg-color-lightmode);
+}
+
+.darkmode{
+    background-color: #311F4B;
+}
+
+
+body{
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    /* transition: 2s; */
+}
+
+#darkmode-bt{
+    display: none;
+}
+
+.darkmode__label{
+    margin: 1em;
+    position: absolute;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0%;
+    min-height: 100vh;
+}
+
+
+.title{
+    font-size: 7em;
+    font-weight: 500;
+}
+
+.subtitle{
+    font-size: 4em;
+    font-weight: 300;
+    margin-top: 0.7em;
+}
+
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+.box{
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    margin: 0.5em 0;
+    font-size: 4em;
+    padding: 20px;
+}
+
+#restart{
+    padding: 1em;
+    margin: 1em 0;
+    background: var(--primary-color);
+    border-radius: 16px;
+}
+
+@media screen and (max-width:500px) {
+    .title{
+        font-size: 3em;
+        font-weight: 500;
+    }
+    
+    .subtitle{
+        font-size: 2em;
+        font-weight: 300;
+        margin-top: 0.7em;
+    }
+    
+    .mensagem{
+        font-size: 1em;
+        margin-top: 2em;
+    }
+
+    .box{
+        border: 2px solid var(--primary-color);
+        display: inline-block;
+        margin: 0.5em 0.1em;
+        font-size: 2em;
+        padding: 15px;
+    }
+}
